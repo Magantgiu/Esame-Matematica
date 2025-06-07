@@ -1,4 +1,4 @@
-# Esame di Stato - Prove di Matematica 2024/2025 🧮
+# Esame di Stato - Prove 🧮
 
 Benvenuto! Questo progetto raccoglie **3 prove interattive** di matematica per l’Esame di Stato di terza media.
 
@@ -12,7 +12,8 @@ Benvenuto! Questo progetto raccoglie **3 prove interattive** di matematica per l
 
 ## 📁 File inclusi
 
-- `index.html`: prima prova
+- `index.html`: benvenuto
+- `prova1.html`: prima prova
 - `prova2.html`: seconda prova
 - `prova3.html`: terza prova
 - `script.js`: funzioni interattive comuni a tutte le prove
