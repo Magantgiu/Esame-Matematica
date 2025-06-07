@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prova 1 - Esame di Stato 2024/2025</title>
   <script src="script.js"></script>
+  <style>
+    .math-tools {
+      margin: 10px 0;
+    }
+    .math-btn {
+      padding: 5px 10px;
+      margin: 2px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    textarea {
+      width: 100%;
+      min-height: 100px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
   <h1>ESAME DI STATO 2024/2025</h1>
@@ -33,7 +49,16 @@
     <li>il volume del solido cavo</li>
     <li>il peso in Kg del solido cavo, sapendo che è di rame (p.s. 8,92)</li>
   </ul>
-  <textarea rows="10" cols="80" placeholder="Scrivi qui la tua risposta..."></textarea>
+  <div class="math-tools">
+    <button class="math-btn" onclick="insertMath('q1', '²')">x²</button>
+    <button class="math-btn" onclick="insertMath('q1', '³')">x³</button>
+    <button class="math-btn" onclick="insertMath('q1', '^')">^</button>
+    <button class="math-btn" onclick="insertMath('q1', '√')">√</button>
+    <button class="math-btn" onclick="insertMath('q1', 'π')">π</button>
+    <button class="math-btn" onclick="insertMath('q1', '₁')">₁</button>
+    <button class="math-btn" onclick="insertMath('q1', '₂')">₂</button>
+  </div>
+  <textarea id="q1" placeholder="Scrivi qui la tua risposta..."></textarea>
 
   <h3>2° Quesito – NUMERI [/25]</h3>
   <p>Risolvi le seguenti equazioni ed esegui la verifica:</p>
@@ -41,7 +66,14 @@
     <li>5(x + 3) = -x + 4(x + 2) + 3(x - 1)</li>
     <li>x(x + 2) + x(4 - x) - 4x = 2 + 4(x + 3)</li>
   </ul>
-  <textarea rows="10" cols="80" placeholder="Scrivi qui la tua soluzione..."></textarea>
+  <div class="math-tools">
+    <button class="math-btn" onclick="insertMath('q2', '²')">x²</button>
+    <button class="math-btn" onclick="insertMath('q2', '^')">^</button>
+    <button class="math-btn" onclick="insertMath('q2', '√')">√</button>
+    <button class="math-btn" onclick="insertMath('q2', '=')">=</button>
+    <button class="math-btn" onclick="insertMath('q2', '≠')">≠</button>
+  </div>
+  <textarea id="q2" placeholder="Scrivi qui la tua soluzione..."></textarea>
 
   <h3>3° Quesito – RELAZIONI E FUNZIONI [/20]</h3>
   <p>La seguente tabella riporta i giorni di lavoro di un artigiano e i metri di tela prodotti:</p>
@@ -53,7 +85,7 @@
   <p>b) Scrivi la relazione che lega i metri tessuti e i giorni impiegati.</p>
   <p>c) Stabilisci che tipo di proporzionalità lega x e y.</p>
   <p>d) Disegna il grafico di questa funzione (usa carta o canvas opzionale).</p>
-  <textarea rows="10" cols="80" placeholder="Scrivi qui la tua risposta..."></textarea>
+  <textarea id="q3" placeholder="Scrivi qui la tua risposta..."></textarea>
 
   <h3>4° Quesito – DATI E PREVISIONI [/20]</h3>
   <p>L’emofilia è una malattia ereditaria recessiva legata al cromosoma X (simbolo Xe).</p>
@@ -64,6 +96,6 @@
     <li>c) Qual è la probabilità che nasca una figlia portatrice?</li>
     <li>d) Se la madre fosse sana, qual è la probabilità che nasca un figlio maschio emofiliaco?</li>
   </ul>
-  <textarea rows="10" cols="80" placeholder="Scrivi qui la tua risposta..."></textarea>
+  <textarea id="q4" placeholder="Scrivi qui la tua risposta..."></textarea>
 </body>
 </html>
