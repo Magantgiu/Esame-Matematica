@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prova 3 - Esame di Stato 2024/2025</title>
+  <script src="script.js"></script>
+  <style>
+    .math-tools {
+      margin: 10px 0;
+    }
+    .math-btn {
+      padding: 5px 10px;
+      margin: 2px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    textarea {
+      width: 100%;
+      min-height: 100px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ESAME DI STATO 2024/2025</h1>
+  <h2>PROVA SCRITTA DI MATEMATICA - Prova 3</h2>
+
+  <p><strong>Cognome e Nome:</strong> <input type="text"> &nbsp;
+     <strong>Data:</strong> <input type="date"> &nbsp;
+     <strong>Classe:</strong> <input type="text">
+  </p>
+
+  <h3>1° Quesito – SPAZIO E FIGURE [/30]</h3>
+  <p>Un quadrato ha il lato di 18 cm. Calcola:</p>
+  <ul>
+    <li>la misura del perimetro del quadrato</li>
+    <li>la misura dell’area del quadrato</li>
+  </ul>
+  <p>Tale quadrato è la base di un prisma retto la cui altezza è 10 cm. Calcola:</p>
+  <ul>
+    <li>l’area della superficie totale del prisma</li>
+    <li>il volume del prisma</li>
+  </ul>
+  <p>Il prisma presenta una cavità a forma di piramide quadrangolare regolare con base coincidente e altezza pari a 6/5 di quella del prisma. Calcola:</p>
+  <ul>
+    <li>l’area della superficie laterale della piramide</li>
+    <li>l’area della superficie totale del solido cavo</li>
+    <li>il volume del solido cavo</li>
+    <li>il peso in Kg del solido, sapendo che è di vetro (p.s. 2,5)</li>
+  </ul>
+  <div class="math-tools">
+    <button class="math-btn" onclick="insertMath('q1', '²')">x²</button>
+    <button class="math-btn" onclick="insertMath('q1', '³')">x³</button>
+    <button class="math-btn" onclick="insertMath('q1', '^')">^</button>
+    <button class="math-btn" onclick="insertMath('q1', '√')">√</button>
+    <button class="math-btn" onclick="insertMath('q1', 'π')">π</button>
+    <button class="math-btn" onclick="insertMath('q1', '₁')">₁</button>
+    <button class="math-btn" onclick="insertMath('q1', '₂')">₂</button>
+  </div>
+  <textarea id="q1" placeholder="Scrivi qui la tua risposta..."></textarea>
+
+  <h3>2° Quesito – NUMERI [/25]</h3>
+  <p>Risolvi le seguenti equazioni ed esegui la verifica:</p>
+  <ul>
+    <li>6x - (12 + 13x) - 14 = x - 2(8 - 5x) - 8x</li>
+    <li>5x + 2 - 4(3x - 2) + 2 = 3 - 12x + 3(3x - 1)</li>
+  </ul>
+  <div class="math-tools">
+    <button class="math-btn" onclick="insertMath('q2', '²')">x²</button>
+    <button class="math-btn" onclick="insertMath('q2', '^')">^</button>
+    <button class="math-btn" onclick="insertMath('q2', '√')">√</button>
+    <button class="math-btn" onclick="insertMath('q2', '=')">=</button>
+    <button class="math-btn" onclick="insertMath('q2', '≠')">≠</button>
+  </div>
+  <textarea id="q2" placeholder="Scrivi qui la tua soluzione..."></textarea>
+
+  <h3>3° Quesito – RELAZIONI E FUNZIONI [/20]</h3>
+  <p>La seguente tabella riporta i giorni di lavoro di un giardiniere ed il salario percepito:</p>
+  <table border="1" cellpadding="6">
+    <tr><th>x (giorni)</th><td>2</td><td>5</td><td></td><td>10</td><td>12</td></tr>
+    <tr><th>y (euro)</th><td></td><td>250</td><td>375</td><td>450</td><td></td></tr>
+  </table>
+  <p>a) Completa la tabella.</p>
+  <p>b) Scrivi la relazione che lega il salario percepito e i giorni di lavoro.</p>
+  <p>c) Stabilisci che tipo di proporzionalità lega x e y.</p>
+  <p>d) Disegna il grafico di questa funzione in un piano cartesiano.</p>
+  <textarea id="q3" placeholder="Scrivi qui la tua risposta..."></textarea>
+
+  <h3>4° Quesito – DATI E PREVISIONI [/25]</h3>
+  <p>Il daltonismo è causato da un gene recessivo Xd nel cromosoma X. Considera madre sana e padre daltonico:</p>
+  <ul>
+    <li>a) Descrivi (genotipo e fenotipo) le situazioni possibili per i figli</li>
+    <li>b) Qual è la probabilità che nasca un figlio maschio daltonico?</li>
+    <li>c) Qual è la probabilità che nasca una figlia portatrice sana?</li>
+    <li>d) Se la madre fosse portatrice sana e il padre daltonico, quale sarebbe la probabilità di avere un figlio daltonico?</li>
+  </ul>
+  <textarea id="q4" placeholder="Scrivi qui la tua risposta..."></textarea>
+</body>
+</html>
