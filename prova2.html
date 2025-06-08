@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prova 2 - Esame di Stato 2024/2025</title>
+  <script src="script.js"></script>
+  <style>
+    .math-tools {
+      margin: 10px 0;
+    }
+    .math-btn {
+      padding: 5px 10px;
+      margin: 2px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    textarea {
+      width: 100%;
+      min-height: 100px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ESAME DI STATO 2024/2025</h1>
+  <h2>PROVA SCRITTA DI MATEMATICA - Prova 2</h2>
+
+  <p><strong>Cognome e Nome:</strong> <input type="text"> &nbsp;
+     <strong>Data:</strong> <input type="date"> &nbsp;
+     <strong>Classe:</strong> <input type="text">
+  </p>
+
+  <h3>1° Quesito – SPAZIO E FIGURE [/35]</h3>
+  <p>Un quadrato ha il lato di 30 cm. Calcola:</p>
+  <ul>
+    <li>la misura del perimetro del quadrato</li>
+    <li>la misura dell’area del quadrato</li>
+  </ul>
+  <p>Tale quadrato è la base di un prisma retto la cui altezza è 4/3 del lato del quadrato. Calcola:</p>
+  <ul>
+    <li>l’area della superficie totale del prisma</li>
+    <li>il volume del prisma</li>
+  </ul>
+  <p>Il prisma è sormontato da una piramide quadrangolare regolare con la base coincidente con quella del prisma e l’altezza pari a una frazione di quella del prisma. Calcola:</p>
+  <ul>
+    <li>l’area della superficie laterale della piramide</li>
+    <li>l’area della superficie totale del solido composto</li>
+    <li>il volume del solido composto</li>
+    <li>il peso in Kg del solido composto, sapendo che è di polietilene (p.s. 0,96)</li>
+  </ul>
+  <div class="math-tools">
+    <button class="math-btn" onclick="insertMath('q1', '²')">x²</button>
+    <button class="math-btn" onclick="insertMath('q1', '³')">x³</button>
+    <button class="math-btn" onclick="insertMath('q1', '^')">^</button>
+    <button class="math-btn" onclick="insertMath('q1', '√')">√</button>
+    <button class="math-btn" onclick="insertMath('q1', 'π')">π</button>
+    <button class="math-btn" onclick="insertMath('q1', '₁')">₁</button>
+    <button class="math-btn" onclick="insertMath('q1', '₂')">₂</button>
+  </div>
+  <textarea id="q1" placeholder="Scrivi qui la tua risposta..."></textarea>
+
+  <h3>2° Quesito – NUMERI [/25]</h3>
+  <p>Risolvi le seguenti equazioni ed esegui la verifica:</p>
+  <ul>
+    <li>5(2x - 9) + 2(5x - 3) = 3(3x - 5) - 3x + 6</li>
+    <li>4(x - 2) = 3(12x + 12 - 6 - x + 1) + 2(3x - 3)</li>
+  </ul>
+  <div class="math-tools">
+    <button class="math-btn" onclick="insertMath('q2', '²')">x²</button>
+    <button class="math-btn" onclick="insertMath('q2', '^')">^</button>
+    <button class="math-btn" onclick="insertMath('q2', '√')">√</button>
+    <button class="math-btn" onclick="insertMath('q2', '=')">=</button>
+    <button class="math-btn" onclick="insertMath('q2', '≠')">≠</button>
+  </div>
+  <textarea id="q2" placeholder="Scrivi qui la tua soluzione..."></textarea>
+
+  <h3>3° Quesito – RELAZIONI E FUNZIONI [/20]</h3>
+  <p>La seguente tabella riporta i giorni di lavoro di un artigiano e i metri di tela prodotti:</p>
+  <table border="1" cellpadding="6">
+    <tr><th>x (giorni)</th><td>2</td><td></td><td>6</td><td>9</td><td></td><td>12</td></tr>
+    <tr><th>y (metri)</th><td></td><td>24</td><td>36</td><td></td><td>60</td></tr>
+  </table>
+  <p>a) Completa la tabella.</p>
+  <p>b) Scrivi la relazione che lega i metri tessuti e i giorni impiegati.</p>
+  <p>c) Stabilisci che tipo di proporzionalità lega x e y.</p>
+  <p>d) Disegna il grafico di questa funzione (usa carta o canvas opzionale).</p>
+  <textarea id="q3" placeholder="Scrivi qui la tua risposta..."></textarea>
+
+  <h3>4° Quesito – DATI E PREVISIONI [/20]</h3>
+  <p>L’emofilia è una malattia ereditaria legata al sesso. Considera una madre portatrice sana e un padre emofiliaco.</p>
+  <ul>
+    <li>a) Descrivi (genotipo e fenotipo) le situazioni possibili per i figli</li>
+    <li>b) Qual è la probabilità che nasca un figlio maschio emofiliaco?</li>
+    <li>c) Qual è la probabilità che nasca una figlia portatrice?</li>
+    <li>d) Se la madre fosse sana, quale sarebbe la probabilità di avere un figlio maschio emofiliaco?</li>
+  </ul>
+  <textarea id="q4" placeholder="Scrivi qui la tua risposta..."></textarea>
+</body>
+</html>
